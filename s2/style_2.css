@@ -1,0 +1,85 @@
+body{
+	width:1200px;
+	font-size: 16px;
+}
+
+.top{
+	width:100%;
+	height: 260x;
+	margin-bottom: 20px;
+}
+.search{
+	width:40%;
+	display: inline-block;
+	margin-top: 0px;
+}
+.select_country{
+	height:80px;
+	padding-left: 20px;
+
+}
+#select_country{
+	width:180px;
+	height:30px;
+	border:1px solid black;
+	border-radius:4px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.zip_code{
+	height:80px;
+	padding-left: 90px;
+}
+#zip{
+	width:90px;
+	height:30px;
+	border:1px solid black;
+	border-radius:4px;
+	font-size: 14px;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+#btn {
+	width:80px;
+	height: 30px;
+	border:1px solid black;
+	border-radius: 4px;
+	font-size: 16px;
+	margin-left: 160px;
+	margin-top: 10px;
+}
+.history{
+	width:30%;
+	margin-top: 10px;
+	display: inline-block;
+	border:1px solid black;
+	border-radius: 4px;
+
+}
+.history p{
+	text-align: center;
+	margin:6px auto;
+}
+.result_table{
+	width:100%;
+}
+.result_table table{
+	margin-top: 30px;
+	margin-left: 160px;
+}
+.result_table tr{
+	height: 30px;
+}
+.result_table th,td{
+	width: 120px;
+	padding: 10px;
+}
+.result_table table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+#googleMap{
+	width:80%;
+	height:400px;
+}
