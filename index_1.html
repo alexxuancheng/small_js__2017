@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset='UTF-8'>
+	<link rel='stylesheet' href='style_1.css'>
+	<script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script> 
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<!-- shows the input and two buttons -->
+	<div id='header'>
+		Virtual bar code:
+		<input type='text' id='virtual_code' name='code' placeholder='Enter the virtual code here'  action="/action_page.php" oninput='change_bg(this)'>
+		<input type='button' id='btn_decode' onclick='get_info()' value='Decode'>
+		<input type='button' id='btn_hide_show' value='hide'>
+	</div>
+
+	<!-- the information section -->
+	<div id='info'>
+		<div class='row1'>
+			<div>
+				<p id='ibna'>Payee's IBAN: </p>  
+			</div>
+			<div>
+				<p id='amount'>Amount to be paid: </p>
+			</div>
+		</div>
+		<div class='row2'>
+			<div>
+				<p id='reference'>Payment reference: </p>
+			</div>
+			<div>
+				<p id='due_date'>Due date: </p>
+			</div>
+		</div>
+		
+		<!-- bar code displaying box -->
+		<svg class="barcode">
+			<text x="40%" y="20%" fill="black" font-size='20'>BAR CODE HERE</text>
+		</svg>			
+	</div>
+	<script src="js_1.js"></script>
+</body>
+</html>
