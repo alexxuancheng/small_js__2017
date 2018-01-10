@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<link rel='stylesheet' href='style_3.css'>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div class='select'>
+		Select the bus line:
+		<input list='select_busline' class='input_list' id='bus_line'>
+		<datalist id='select_busline'></datalist>
+	</div>
+	
+	<input type='button' id='show_buses' value='Show buses' onclick="showBuses()">
+	<input type='button' id='refresh' value='refresh' onclick="refresh()">
+	<input type='button' id='show_route' value='Show route' onclick="showRoute()">
+
+	<div id="googleMap"></div>	
+
+	<script src="js_3.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0AfQ8HdoiYJ0wS4Zmsatm90hD9XbR9oI&callback=myMap"></script>
+</body>
+</html>

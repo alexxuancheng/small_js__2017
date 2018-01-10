@@ -1,0 +1,41 @@
+body{
+	width:1000px;
+	border:1px solid black;
+	font-size: 18px;
+}
+.select{
+	margin-top: 40px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+}
+.input_list{
+	width:150px;
+	height:25px;
+	font-size: 14px;
+	margin-left: 10px;
+	border:1px solid black;
+	border-radius: 4px;
+	padding-left: 10px;
+
+}
+#show_buses{
+	margin-left: 60px;
+}
+#refresh{
+	margin-left: 260px;
+}
+#show_route{
+	margin-left: 260px;
+}
+#show_buses,#refresh,#show_route{
+	width:100px;
+	height: 30px;
+	border:1px solid black;
+	font-size: 14px;
+	background-color: lightgray;
+}
+#googleMap{
+	width:90%;
+	height:500px;
+	margin:20px auto;
+}

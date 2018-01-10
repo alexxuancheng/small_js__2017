@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<link rel='stylesheet' href='style_2.css'>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div class='top'>
+		<!-- get country and zipcode, and search-->
+		<div class='search'>
+			<div class='select_country'>
+				Select your country 
+				<select id='select_country'>
+					<option>select country</option>
+					<option value='FI'>Finland</option>
+					<option value='SE'>Sweden</option>
+					<option value='FR'>France</option>
+					<option value='DE'>Germany</option>
+					<option value='US'>America</option>
+				</select>
+			</div>
+			<div class='zip_code'>
+				Zip code
+				<input type='text' id='zip'><span id='error'></span> 
+			</div>
+			<input type='button' value='Search' id='btn' onclick="search()">
+		</div>
+
+		<!-- history of 10 searches -->
+		<div class='history'>
+			<p>History of the last 10 searches</p>
+			<ul id='history_list'>
+				<li id='l1'></li>
+				<li id='l2'></li>
+				<li id='l3'></li>
+				<li id='l4'></li>
+				<li id='l5'></li>
+				<li id='l6'></li>
+				<li id='l7'></li>
+				<li id='l8'></li>
+				<li id='l9'></li>
+				<li id='l10'></li>
+			</ul>
+		</div>
+
+		<!-- table shows the result -->
+		<div class='result_table'>
+			<table id='myTable'>
+				<tr>
+					<th>Place name</th>
+					<th>Longitude</th>
+					<th>Latitude</th>
+				</tr>
+				<tr>
+					<td>...</td>
+					<td>...</td>
+					<td>...</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- map section:diaplay google map-->
+	<div id="googleMap"></div>	
+
+	<script src="js_2.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0AfQ8HdoiYJ0wS4Zmsatm90hD9XbR9oI&callback=myMap"></script>
+</body>
+</html>
