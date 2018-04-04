@@ -39,7 +39,7 @@ function search(){
 	}
 
 	// fetch zipcode information from API provided by http://www.zippopotam.us.
-	var url_add="http://api.zippopotam.us/"+country.value+'/'+zip_code.value;
+	var url_add="https://api.zippopotam.us/"+country.value+'/'+zip_code.value;
 	var x=document.getElementById("myTable").rows[1].cells;
 	var error=document.getElementById("error"); //set the error, incase input zipcode is invalid
 
