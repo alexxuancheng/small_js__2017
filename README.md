@@ -1,4 +1,5 @@
-# small_js__2017
+# small_javascript_exercises__2017
+('Development of Interactive web application' course, Abo akademi)
 
 #s1: Decoding invoice information in JavaScript
 
