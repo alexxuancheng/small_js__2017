@@ -16,14 +16,14 @@ function myMap() {
 // get route_id and route_short_name from ‘routes’ API,display all route_short_name in the datalist
 function getRoute() {
 	var client = new XMLHttpRequest();
-	var url_add1 = "http://data.foli.fi/gtfs/";
+	var url_add1 = "https://data.foli.fi/gtfs/";
 	client.open("GET", url_add1, true);
 	client.onreadystatechange = function() {
 		if (client.readyState == 4 && client.status == 200) {
 			var jsonObj1 = JSON.parse(client.responseText);
 			var dataset = jsonObj1['datasets'][0];
 
-			url_add2 = "http://data.foli.fi/gtfs/v0/" + dataset + "/routes/";
+			url_add2 = "https://data.foli.fi/gtfs/v0/" + dataset + "/routes/";
 			client.open("GET", url_add2, true);
 			client.onreadystatechange = function() {
 				var jsonObj2 = JSON.parse(client.responseText);
@@ -55,14 +55,14 @@ function showRoute() {
 	//Acquire list of trips from trips/route/route_id table
 	// Pick a random trip and get it's shape_id
 	var client = new XMLHttpRequest();
-	var url_add1 = "http://data.foli.fi/gtfs/";
+	var url_add1 = "https://data.foli.fi/gtfs/";
 	client.open("GET", url_add1, true);
 	client.onreadystatechange = function() {
 		if (client.readyState == 4 && client.status == 200) {
 			var jsonObj1 = JSON.parse(client.responseText);
 			var dataset = jsonObj1['datasets'][0];
 
-			var url_add2 = "http://data.foli.fi/gtfs/v0/" + dataset + "/trips/route/" + route_id;
+			var url_add2 = "https://data.foli.fi/gtfs/v0/" + dataset + "/trips/route/" + route_id;
 			client.open("GET", url_add2, true);
 			client.onreadystatechange = function() {
 				if (client.readyState == 4 && client.status == 200) {
@@ -70,7 +70,7 @@ function showRoute() {
 					var shape_id = jsonObj2[0]['shape_id'];
 
 					// Acquire coordinate listing by shapes/shape_id table
-					var url_add3 = "http://data.foli.fi/gtfs/v0/" + dataset + "/shapes/" + shape_id;
+					var url_add3 = "https://data.foli.fi/gtfs/v0/" + dataset + "/shapes/" + shape_id;
 					client.open("GET", url_add3, true);
 					client.onreadystatechange = function() {
 						if (client.readyState == 4 && client.status == 200) {
@@ -127,7 +127,7 @@ function showBuses() {
 	var route_id = document.getElementById(route_name).innerHTML; //route_id
 
 	var client = new XMLHttpRequest();
-	var url_add = "http://data.foli.fi/siri/vm/pretty";
+	var url_add = "https://data.foli.fi/siri/vm/pretty";
 	client.open("GET", url_add, true);
 	client.onreadystatechange = function() {
 		if (client.readyState == 4 && client.status == 200) {
