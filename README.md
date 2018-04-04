@@ -18,6 +18,11 @@ Virtual code 2: 416800014000502670009358500000078777679656628687000000
 
 demo: https://alexxuancheng.github.io/small_js__2017/index_2.html
 
-#s3: Föli buses and routes
+Implement a document fetching information related to ZIP codes in few countries via the API provided by http://www.zippopotam.us. Display Country,zip_code,place's Longitude and Latitude, also display bellow a map showing the location of the place.
+
+#s3: Föli buses and routes (Turku city bus Föli)
 
 demo: https://alexxuancheng.github.io/small_js__2017/index_3.html
+
+Implement a page displaying the real-time location of buses in Turku and their corresponding routes.
+The Föli APIs are described on the following page: http://data.foli.fi/doc/index-en
